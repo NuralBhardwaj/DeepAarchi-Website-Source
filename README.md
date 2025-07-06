@@ -201,7 +201,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For support and questions:
-- **Email**: info@deepaarchitattoo.com
+- **Email**: nuralbhardwaj.contact@gmail.com
 - **GitHub Issues**: [Create an issue](https://github.com/NuralBhardwaj/DeepAarchi-Website-Source/issues)
 
 ## 🙏 Acknowledgments

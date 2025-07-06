@@ -16,7 +16,7 @@ function App() {
         <CalendarProvider>
             <TestimonialProvider>
               <ArtistProvider>
-                <Router>
+                <Router basename="/DeepAarchi-Website-Source">
                   <div className="App">
                     <Routes>
                       <Route path="/" element={<DeepAarchiTattoo />} />
