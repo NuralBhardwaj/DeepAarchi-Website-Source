@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/DeepAarchi-Website-Source/static/css/main.c80e3b33.css",
-    "main.js": "/DeepAarchi-Website-Source/static/js/main.c455fbfc.js",
+    "main.js": "/DeepAarchi-Website-Source/static/js/main.667d9082.js",
     "static/js/453.1bff5e89.chunk.js": "/DeepAarchi-Website-Source/static/js/453.1bff5e89.chunk.js",
     "static/media/tattoo.png": "/DeepAarchi-Website-Source/static/media/tattoo.96add378f6d857bbb814.png",
     "index.html": "/DeepAarchi-Website-Source/index.html",
     "main.c80e3b33.css.map": "/DeepAarchi-Website-Source/static/css/main.c80e3b33.css.map",
-    "main.c455fbfc.js.map": "/DeepAarchi-Website-Source/static/js/main.c455fbfc.js.map",
+    "main.667d9082.js.map": "/DeepAarchi-Website-Source/static/js/main.667d9082.js.map",
     "453.1bff5e89.chunk.js.map": "/DeepAarchi-Website-Source/static/js/453.1bff5e89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c80e3b33.css",
-    "static/js/main.c455fbfc.js"
+    "static/js/main.667d9082.js"
   ]
 }
