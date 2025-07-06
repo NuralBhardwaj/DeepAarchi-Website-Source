@@ -1,46 +1,216 @@
-# Getting Started with Create React App
+# 🎨 Deep Aarchi Tattoo Studio - Professional Website & CMS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive tattoo studio website built with React and TypeScript, featuring a comprehensive Content Management System for portfolio, appointments, and client management.
 
-## Available Scripts
+![Deep Aarchi Tattoo Studio](https://img.shields.io/badge/Status-Live-brightgreen)
+![React](https://img.shields.io/badge/React-18.0+-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9+-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0+-blue)
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+### 🎯 Main Website
+- **Single-Page Application**: Smooth scrolling navigation with all sections on one page
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Black & Gray Theme**: Professional, modern aesthetic perfect for tattoo studios
+- **Interactive Navigation**: Scroll-based navigation with active section detection and progress bar
+- **Dynamic Content**: Real-time portfolio gallery and client testimonials
+- **Booking System**: Integrated appointment booking with form validation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🛠️ Content Management System (CMS)
+- **Secure Admin Panel**: Protected with authentication and session management
+- **Portfolio Management**: Add, edit, and delete tattoo portfolio items with image upload
+- **Artist Management**: Complete artist profiles with specialties, experience, and images
+- **Calendar System**: Appointment scheduling and availability management
+- **Testimonial System**: Client review management with rating system
+- **Real-time Synchronization**: Changes in admin panel instantly reflect on main website
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 🔒 Security Features
+- **Secure Authentication**: Hashed credentials with session management
+- **Environment Variables**: Secure configuration management
+- **Protected Routes**: Admin panel access control
+- **Session Expiration**: Automatic logout for security
 
-### `npm test`
+## 🚀 Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Main Website**: [https://nuralbhardwaj.github.io/DeepAarchi-Website-Source/](https://nuralbhardwaj.github.io/DeepAarchi-Website-Source/)
 
-### `npm run build`
+**Admin Panel**: [https://nuralbhardwaj.github.io/DeepAarchi-Website-Source/admin](https://nuralbhardwaj.github.io/DeepAarchi-Website-Source/admin)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+tattoo-website/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # React components
+│   │   ├── Admin/         # CMS admin components
+│   │   ├── Icons/         # Custom icons and images
+│   │   ├── Layout/        # Navigation and footer
+│   │   ├── Sections/      # Main website sections
+│   │   └── UI/            # Reusable UI components
+│   ├── contexts/          # React Context providers
+│   ├── services/          # Authentication and API services
+│   ├── types/             # TypeScript type definitions
+│   └── data/              # Static data and configurations
+├── .env.example           # Environment variables template
+└── README.md              # This file
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Installation & Setup
 
-### `npm run eject`
+### Prerequisites
+- Node.js (v16.0 or higher)
+- npm or yarn package manager
+- Git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Local Development Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/NuralBhardwaj/DeepAarchi-Website-Source.git
+   cd DeepAarchi-Website-Source/tattoo-website
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. **Environment Configuration**
+   ```bash
+   # Copy the environment template
+   cp .env.example .env
 
-## Learn More
+   # Edit .env file with your credentials
+   REACT_APP_ADMIN_USERNAME=your_admin_username
+   REACT_APP_ADMIN_PASSWORD=your_secure_password
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Start development server**
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Access the application**
+   - Main Website: `http://localhost:3000`
+   - Admin Panel: `http://localhost:3000/admin`
+
+### Production Build
+
+```bash
+# Create production build
+npm run build
+
+# Serve production build locally (optional)
+npm install -g serve
+serve -s build
+```
+
+## 🎨 Customization
+
+### Styling
+- Built with **Tailwind CSS** for easy customization
+- Black and gray color scheme defined in `tailwind.config.js`
+- Responsive design with mobile-first approach
+
+### Content Management
+- Edit portfolio items through the admin panel
+- Manage artist profiles and specialties
+- Update testimonials and ratings
+- Schedule appointments and manage calendar
+
+### Branding
+- Replace logo in `src/components/Icons/TattooMachine.tsx`
+- Update studio information in `src/data/index.ts`
+- Customize color scheme in Tailwind configuration
+
+## 🔧 Technical Stack
+
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: React Context API
+- **Routing**: React Router DOM
+- **Storage**: Local Storage for data persistence
+- **Authentication**: Custom secure authentication service
+- **Build Tool**: Create React App
+- **Deployment**: GitHub Pages
+
+## 📱 Responsive Design
+
+The website is fully responsive and optimized for:
+- **Desktop**: Full-featured experience with hover effects
+- **Tablet**: Touch-optimized navigation and layouts
+- **Mobile**: Streamlined interface with mobile-specific optimizations
+
+## 🔐 Admin Panel Access
+
+**Default Credentials** (Change in production):
+- Username: `admin`
+- Password: `deepaarchi2024`
+
+**Security Notes**:
+- Credentials are hashed and stored securely
+- Session management with automatic expiration
+- Environment variables for secure configuration
+- Protected routes prevent unauthorized access
+
+## 🚀 Deployment
+
+### GitHub Pages Deployment
+
+1. **Install gh-pages**
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+2. **Add deployment scripts to package.json**
+   ```json
+   {
+     "homepage": "https://nuralbhardwaj.github.io/DeepAarchi-Website-Source",
+     "scripts": {
+       "predeploy": "npm run build",
+       "deploy": "gh-pages -d build"
+     }
+   }
+   ```
+
+3. **Deploy to GitHub Pages**
+   ```bash
+   npm run deploy
+   ```
+
+### Manual Deployment
+
+1. Upload the `build` folder contents to your web server
+2. Configure your server to serve `index.html` for all routes
+3. Set up environment variables on your hosting platform
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support
+
+For support and questions:
+- **Email**: info@deepaarchitattoo.com
+- **GitHub Issues**: [Create an issue](https://github.com/NuralBhardwaj/DeepAarchi-Website-Source/issues)
+
+## 🙏 Acknowledgments
+
+- Built with modern React and TypeScript best practices
+- Designed with user experience and accessibility in mind
+- Optimized for performance and SEO
+- Secure authentication and data management
+
+---
+
+**Made with ❤️ for Deep Aarchi Tattoo Studio**
