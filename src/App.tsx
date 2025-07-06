@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DeepAarchiTattoo from './DeepAarchiTattoo';
+import AdminPanel from './components/Admin/AdminPanel';
+import { AdminProvider } from './contexts/AdminContext';
+import { PortfolioProvider } from './contexts/PortfolioContext';
+import { CalendarProvider } from './contexts/CalendarContext';
+import { TestimonialProvider } from './contexts/TestimonialContext';
+import { ArtistProvider } from './contexts/ArtistContext';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AdminProvider>
+      <PortfolioProvider>
+        <CalendarProvider>
+            <TestimonialProvider>
+              <ArtistProvider>
+                <Router>
+                  <div className="App">
+                    <Routes>
+                      <Route path="/" element={<DeepAarchiTattoo />} />
+                      <Route path="/admin" element={<AdminPanel />} />
+                    </Routes>
+                  </div>
+                </Router>
+              </ArtistProvider>
+            </TestimonialProvider>
+        </CalendarProvider>
+      </PortfolioProvider>
+    </AdminProvider>
   );
 }
 
